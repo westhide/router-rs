@@ -1,0 +1,14 @@
+[package]
+name = "router-build"
+
+description = "router-build"
+edition     = { workspace = true }
+license     = { workspace = true }
+version     = { workspace = true }
+
+
+[lints]
+workspace = true
+
+
+[dependencies]

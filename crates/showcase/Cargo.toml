@@ -1,0 +1,14 @@
+[package]
+name = "router-showcase"
+
+description = "router-showcase"
+edition     = { workspace = true }
+license     = { workspace = true }
+version     = { workspace = true }
+
+
+[lints]
+workspace = true
+
+
+[dependencies]

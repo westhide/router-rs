@@ -1,0 +1,41 @@
+[workspace]
+members  = ["crates/*"]
+resolver = "3"
+
+
+[workspace.package]
+authors    = ["unknown@unknown.com"]
+edition    = "2024"
+license    = "MIT"
+repository = "https://unknown.com"
+version    = "0.1.0"
+
+
+[workspace.dependencies]
+# Member
+router-build    = { path = "crates/build" }
+router-macro    = { path = "crates/macro" }
+router-showcase = { path = "crates/showcase" }
+
+# Macro
+
+# Extern
+
+# Build
+
+
+[patch.crates-io]
+
+
+[workspace.lints.clippy]
+# cargo       = "warn"
+# restriction = "warn"
+as_conversions = "warn"
+pedantic       = "warn"
+
+
+[profile.release]
+codegen-units = 1
+lto           = true
+opt-level     = 3
+strip         = "symbols"
