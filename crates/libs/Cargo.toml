@@ -1,0 +1,21 @@
+[package]
+name = "router-libs"
+
+description = "router-libs"
+edition     = { workspace = true }
+license     = { workspace = true }
+version     = { workspace = true }
+
+
+[features]
+mimalloc = ["dep:mimalloc"]
+
+
+[lints]
+workspace = true
+
+
+[dependencies]
+mimalloc           = { workspace = true, optional = true }
+tracing            = { workspace = true, features = ["attributes", "release_max_level_info", "std"] }
+tracing-subscriber = { workspace = true, features = ["ansi", "env-filter", "fmt", "smallvec", "std", "tracing-log"] }

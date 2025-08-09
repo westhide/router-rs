@@ -14,14 +14,28 @@ version    = "0.1.0"
 [workspace.dependencies]
 # Member
 router-build    = { path = "crates/build" }
+router-core     = { path = "crates/core" }
+router-libs     = { path = "crates/libs" }
 router-macro    = { path = "crates/macro" }
 router-showcase = { path = "crates/showcase" }
-
-# Macro
+rust-router     = { path = "crates/router" }
 
 # Extern
+futures            = { version = "0.3", default-features = false }
+mimalloc           = { version = "0.1", default-features = false }
+nill               = { version = "1.1.0", default-features = false }
+thiserror          = { version = "2.0", default-features = false }
+tokio              = { version = "1", default-features = false }
+tracing            = { version = "0.1", default-features = false }
+tracing-subscriber = { version = "0.3", default-features = false }
 
 # Build
+
+# Macro
+syn = { version = "2.0", default-features = false }
+
+# Test
+insta = { version = "1.43", default-features = false }
 
 
 [patch.crates-io]

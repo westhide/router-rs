@@ -12,3 +12,14 @@ workspace = true
 
 
 [dependencies]
+router-libs = { workspace = true }
+
+futures   = { workspace = true }
+nill      = { workspace = true }
+thiserror = { workspace = true }
+tokio     = { workspace = true, features = ["fs", "macros", "rt", "rt-multi-thread", "sync"] }
+tracing   = { workspace = true }
+
+
+[dev-dependencies]
+insta = { workspace = true, features = ["colors", "redactions", "yaml"] }
