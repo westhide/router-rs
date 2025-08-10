@@ -1,4 +1,11 @@
-use router_macro::handler;
+use rust_router::handler;
 
-#[handler]
-fn main() {}
+#[handler(Put)]
+fn a() {
+    println!("a");
+    println!("a");
+}
+
+fn main() {
+    a();
+}

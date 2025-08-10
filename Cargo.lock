@@ -739,7 +739,7 @@ dependencies = [
  "nill",
  "router-build",
  "router-libs",
- "router-macro",
+ "rust-router",
  "tokio",
 ]
 
@@ -749,6 +749,7 @@ version = "0.1.0"
 dependencies = [
  "axum",
  "router-core",
+ "router-macro",
 ]
 
 [[package]]

@@ -12,6 +12,7 @@ workspace = true
 
 
 [dependencies]
-router-core = { workspace = true }
+router-core  = { workspace = true }
+router-macro = { workspace = true }
 
 axum = { version = "0.8", features = ["http2", "macros"] }
