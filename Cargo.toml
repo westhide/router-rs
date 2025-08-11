@@ -13,12 +13,12 @@ version    = "0.1.0"
 
 [workspace.dependencies]
 # Member
-router-build    = { path = "crates/build" }
-router-core     = { path = "crates/core" }
-router-libs     = { path = "crates/libs" }
-router-macro    = { path = "crates/macro" }
-router-showcase = { path = "crates/showcase" }
-rust-router     = { path = "crates/router" }
+router-build      = { path = "crates/build" }
+router-core       = { path = "crates/core" }
+router-libs       = { path = "crates/libs" }
+router-macro      = { path = "crates/macro" }
+router-macro-impl = { path = "crates/macro-impl" }
+router-showcase   = { path = "crates/showcase" }
 
 # Extern
 futures            = { version = "0.3", default-features = false }

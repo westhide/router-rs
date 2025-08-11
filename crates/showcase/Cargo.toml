@@ -13,8 +13,7 @@ workspace = true
 
 [dependencies]
 router-build = { workspace = true }
-router-libs  = { workspace = true, features = ["mimalloc"] }
-rust-router  = { workspace = true }
+router-macro = { workspace = true }
 
 nill  = { workspace = true }
 tokio = { workspace = true, features = ["fs", "macros", "rt", "rt-multi-thread", "sync"] }

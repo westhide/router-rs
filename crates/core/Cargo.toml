@@ -12,3 +12,4 @@ workspace = true
 
 
 [dependencies]
+axum = { version = "0.8", features = ["http2", "macros"] }

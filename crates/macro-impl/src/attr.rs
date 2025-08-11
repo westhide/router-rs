@@ -59,15 +59,15 @@ impl Parse for Method {
 impl ToTokens for Method {
     fn to_tokens(&self, tokens: &mut TokenStream2) {
         let token = match self {
-            Self::Get => quote! {::rust_router::restfull::GET},
-            Self::Head => quote! {::rust_router::restfull::HEAD},
-            Self::Post => quote! {::rust_router::restfull::POST},
-            Self::Put => quote! {::rust_router::restfull::PUT},
-            Self::Delete => quote! {::rust_router::restfull::DELETE},
-            Self::Connect => quote! {::rust_router::restfull::CONNECT},
-            Self::Options => quote! {::rust_router::restfull::OPTIONS},
-            Self::Trace => quote! {::rust_router::restfull::TRACE},
-            Self::Patch => quote! {::rust_router::restfull::PATCH},
+            Self::Get => quote!(GET),
+            Self::Head => quote!(HEAD),
+            Self::Post => quote!(POST),
+            Self::Put => quote!(PUT),
+            Self::Delete => quote!(DELETE),
+            Self::Connect => quote!(CONNECT),
+            Self::Options => quote!(OPTIONS),
+            Self::Trace => quote!(TRACE),
+            Self::Patch => quote!(PATCH),
         };
         tokens.extend(token);
     }

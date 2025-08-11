@@ -1,5 +1,6 @@
 use axum::{Router, routing::MethodRouter};
-use router_core::route::{Route, RouteItem};
+
+use crate::route::{Route, RouteItem};
 
 pub trait RouterExt<S> {
     fn new() -> Self;

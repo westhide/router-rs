@@ -703,6 +703,9 @@ dependencies = [
 [[package]]
 name = "router-core"
 version = "0.1.0"
+dependencies = [
+ "axum",
+]
 
 [[package]]
 name = "router-libs"
@@ -717,6 +720,14 @@ dependencies = [
 name = "router-macro"
 version = "0.1.0"
 dependencies = [
+ "router-core",
+ "router-macro-impl",
+]
+
+[[package]]
+name = "router-macro-impl"
+version = "0.1.0"
+dependencies = [
  "syn",
 ]
 
@@ -729,27 +740,13 @@ name = "router-plugin"
 version = "0.1.0"
 
 [[package]]
-name = "router-runtime"
-version = "0.1.0"
-
-[[package]]
 name = "router-showcase"
 version = "0.1.0"
 dependencies = [
  "nill",
  "router-build",
- "router-libs",
- "rust-router",
- "tokio",
-]
-
-[[package]]
-name = "rust-router"
-version = "0.1.0"
-dependencies = [
- "axum",
- "router-core",
  "router-macro",
+ "tokio",
 ]
 
 [[package]]
